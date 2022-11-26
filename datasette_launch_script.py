@@ -20,7 +20,7 @@ cmd('ngrok config add-authtoken ' + os.environ['NGROK_AUTHTOKEN'])
 
 # 3) Move Datasette config file to systemd destination
 
-cmd('mv datasette.service /etc/systemd/system/')
+cmd('sudo mv datasette.service /etc/systemd/system/')
 
 # 3) Start datasette
 

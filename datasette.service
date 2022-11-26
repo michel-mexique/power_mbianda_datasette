@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=ubuntu
 Environment=DATASETTE_SECRET=3efdc8349c7bee511ba8ea53cd7e9e3d8c4c31c7a9dc0284a660b6723f9fad9f
-WorkingDirectory=/home/ubuntu/power_mbianda_datasette
+WorkingDirectory=/home/ubuntu/power_mbianda_datasette/data
 ExecStart=datasette serve . -h 127.0.0.1 -p 8001
 Restart=on-failure
 
