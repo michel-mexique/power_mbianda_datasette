@@ -29,4 +29,4 @@ cmd('sudo systemctl start datasette.service')
 
 # 4) Web deployment on ngrok
 
-cmd('sudo ngrok http 8001')
+cmd('ngrok http 8000')
